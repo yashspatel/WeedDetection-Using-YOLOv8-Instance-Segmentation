@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload Video{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col text-center">
+            <h1 class="mb-4">Upload a Video</h1>
+            <form method="POST" enctype="multipart/form-data" class="mt-4" id="upload-form">
+                <div class="mb-4 dropzone">
+                    <input type="file" class="form-control" id="video" name="video" accept="video/*" required>
+                    <label for="video" class="form-label mt-2">Drag and drop a video file here or click to select</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="progress mt-3" style="display:none;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block scripts %}
+<script>
+    document.getElementById("upload-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        let progressBar = document.querySelector(".progress");
+        progressBar.style.display = "block";
+        setTimeout(() => {
+            this.submit();
+        }, 1000);
+    });
+</script>
+{% endblock %}
+

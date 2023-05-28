@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">History</h1>
+        {% if raw_videos and processed_videos %}
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Raw Video</th>
+                        <th scope="col">Processed Video</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for raw_video, processed_video in raw_videos|zip(processed_videos) %}
+                        <tr>
+                            <td>
+                                <a href="{{ url_for('download_file', folder='uploads', filename=raw_video.name) }}" target="_blank" class="text-decoration-none">{{ raw_video.name }}</a>
+                            </td>
+                            <td>
+                                <a href="{{ url_for('download_file', folder='predict', filename=processed_video.name) }}" target="_blank" class="text-decoration-none">{{ processed_video.name }} (Processed)</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="alert alert-info" role="alert">
+                No history available.
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

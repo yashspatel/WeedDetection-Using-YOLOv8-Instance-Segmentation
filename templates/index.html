@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="header-section vertically-centered-content">
+    <div class="container text-center">
+        <h1>Video Object Detection</h1>
+        <p class="lead">Upload a video and detect objects using our machine learning model.</p>
+        <a href="{{ url_for('upload') }}" class="btn btn-primary btn-lg">Upload a Video</a>
+    </div>
+</div>
+{% endblock %}

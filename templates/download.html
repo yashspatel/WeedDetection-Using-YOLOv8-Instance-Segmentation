@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Download Processed Video{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5">
+        
+        <div>
+            <a href="{{ url_for('download_file', folder='predict', filename=filename) }}" class="btn btn-primary">Download Video</a>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">Back to Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
