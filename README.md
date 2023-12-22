@@ -128,3 +128,13 @@ Random brigthness adjustment of between -25 and +25 percent
 2. Open this file location in CMD/Power-Shell/Terminal
 3. Give command: python app.py
 4. After it generates Debugger PIN, open Chrome and link http://127.0.0.1:5000 to use it.
+
+
+## *Contact*
+
+To learn more about this project and others:
+
+- [*Portfolio*](https://yashspatel.netlify.app/)
+- [*LinkedIn*](https://www.linkedin.com/in/yashsanjaykumarpatel/)
+- [*GitHub*](https://github.com/yashspatel)
+- [*My Resume*](https://yashspatel.netlify.app/images/Yash's%20Resume.pdf) 
