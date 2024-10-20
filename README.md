@@ -137,4 +137,4 @@ To learn more about this project and others:
 - [*Portfolio*](https://www.yashpatel.work/)
 - [*LinkedIn*](https://www.linkedin.com/in/yashsanjaykumarpatel/)
 - [*GitHub*](https://github.com/yashspatel)
-- [*My Resume*](https://yashspatel.netlify.app/images/Yash's%20Resume.pdf) 
+- [*My Resume*](https://yashpatel.work/Resume.pdf) 
